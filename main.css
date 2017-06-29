@@ -29,9 +29,10 @@ img{
 }
 .wrapper{
     width: 1000px;
-    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
     /*
-        TODO:
+        TODO: Done!
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
@@ -54,7 +55,7 @@ img{
         TODO: DONE - Works!
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
-        
+
     */
     background-image: url(./img/header-img.jpg);
     background-size: cover;
