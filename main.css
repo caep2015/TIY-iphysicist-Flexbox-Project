@@ -98,15 +98,16 @@ img{
     padding: 10px 20px;
 
     /*
-        TODO:
+        TODO: Not done: tried several things - not working yet.
         - Flexbox - Create general spacing between nav links
     */
+
 }
 #main-navigation #logo{
     margin-right: 400px;
-
+    margin-left: 20px;
     /*
-        TODO:
+        TODO: DONE!
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -165,13 +166,20 @@ article time{
     color: #666;
 }
 article img{
+  float: right;
+  width: 50%;
     /*
-        TODO:
+        TODO: DONE
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  line-height: 1em;
+  border-top: 1px solid #ccc;
     /*
         TODO:
         - Style the article footer
