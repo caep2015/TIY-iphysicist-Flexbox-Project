@@ -1,16 +1,15 @@
 /*
-
 FONTS:
-
 'Josefin Sans'
 'Noto Serif'
 'Dancing Script'
-
 COLORS:
-
 light tan: #eeebda
-
 */
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
@@ -21,6 +20,7 @@ h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
     margin-top: 0;
 }
+
 img{
     max-width: 100%;
     padding: 0;
@@ -32,32 +32,31 @@ img{
     margin: 0 auto;
     overflow: hidden;
     /*
-        TODO: Done!
+        TODO: Done
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
     */
 }
 #site-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     /*
         TODO
         - Flexbox property here
     */
-
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
-
+    background-image: url("img/header-img.jpg");
     /*
-        TODO: DONE - Works!
+        TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
-
     */
-    background-image: url(./img/header-img.jpg);
     background-size: cover;
     background-position: right bottom;
 }
@@ -74,21 +73,19 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-
+    font-family: Dancing Script;
     /*
-        TODO: DONE
+        TODO:
         - Use the script font: 'Dancing Script' fot this text
-        cep note --> added font-family.
     */
-    font-family: 'Dancing Script';
 }
 #main-navigation{
     background: #444;
+    display: flex;
     /*
-        TODO: DONE! WORKS!
+        TODO:
         - Use Flexbox to arrange the navigation links
     */
-    display: flex;
 }
 #main-navigation a{
     display: block;
@@ -96,27 +93,32 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-
+    justify-content: flex-end;
     /*
-        TODO: Not done: tried several things - not working yet.
+        TODO:
         - Flexbox - Create general spacing between nav links
-    */
+          */
+      }
+      #main-navigation #logo{
+          margin-right: 500px;
+          margin-left: 20px;
+          /*
+              TODO:
+              - Flexbox - The logo needs to take up more space
+              that the other links
+          */
+      }
+      main{
+          padding: 20px;
+          background-color: #444;
+          box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+          width: 550px;
+          position: absolute;
+          left: 225px;
+          right: 300px;
+          margin-top: -50px;
+      /*
 
-}
-#main-navigation #logo{
-    margin-right: 400px;
-    margin-left: 20px;
-    /*
-        TODO: DONE!
-        - Flexbox - The logo needs to take up more space
-        that the other links
-    */
-}
-main{
-    padding: 20px;
-    background-color: #444;
-    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
         TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
@@ -126,12 +128,19 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 200px;
+    position: absolute;
+    left: 815px;
+    right: 200px;
+    margin-top: -50px;
+    height: 2004px;
     /*
-        TODO:
+        TODO: Done
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
 }
+
 aside h3{
     text-align: center;
     margin: 0 0 10px 0;
@@ -142,6 +151,7 @@ aside img{
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
+    float: right;
 }
 article{
     background-color: white;
@@ -166,20 +176,24 @@ article time{
     color: #666;
 }
 article img{
-  float: right;
-  width: 50%;
+    float: right;
+    width: 55%;
+
+
     /*
-        TODO: DONE
+        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px;
-  line-height: 1em;
-  border-top: 1px solid #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 1em;
+    border-top: 1px solid #ccc;
+
+
     /*
         TODO:
         - Style the article footer
@@ -187,10 +201,13 @@ article footer p{
     */
 }
 #site-footer{
-
+    color: white;
+    text-align: center;
     background: #333;
+    margin-top: 2030px;
+    padding: 15px;
     /*
         TODO:
         - Style the site footer
     */
-}
+  }
