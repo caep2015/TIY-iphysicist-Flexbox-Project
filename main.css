@@ -32,6 +32,11 @@ img{
 }
 .wrapper{
     width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
 
     /*
         TODO: 
@@ -41,6 +46,9 @@ img{
     */
 }
 #site-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     /*
         TODO
         - Flexbox property here
@@ -50,7 +58,7 @@ img{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
+    background-image: url("img/header-img.jpg");
     /*
         TODO: 
         - Add a background image "header-img.jpg"
@@ -73,6 +81,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: Dancing Script;
     /*
         TODO: 
         - Use the script font: 'Dancing Script' fot this text
@@ -80,6 +89,7 @@ img{
 }
 #main-navigation{
     background: #444;
+    display: flex;
 
     /*
         TODO: 
@@ -92,6 +102,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    justify-content: flex-end;
 
     /*
         TODO: 
@@ -121,6 +132,10 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    flex-basis: 20%;
+    position: relative;
+    margin-top: -50px;
+    
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -161,6 +176,8 @@ article time{
     color: #666;
 }
 article img{
+    float: right;
+    width: 55%;
     /*
         TODO: 
         - Float article images to the right
@@ -168,6 +185,11 @@ article img{
     */
 }
 article footer p{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 1em;
+    border-top: 1px solid #ccc;
     /*
         TODO: 
         - Style the article footer
@@ -175,8 +197,11 @@ article footer p{
     */
 }
 #site-footer{
-    
     background: #333;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
     /*
         TODO: 
         - Style the site footer
