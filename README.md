@@ -1,3 +1,8 @@
+This project was originally titled ibeer and it was updated with iphysicist by The Iron Yard after my cohort ended. I am in the process of going back and replacing the ibeer code with the iphysicist. I noticed that new id's and different classes were added to the html that do not match ibeer's CSS properties. I will go back and do this at a later time.
+----
+
+Daily project: The Iron Yard Week 1, Day 4
+
 # iphysicist
 
 iPhysicist - CSS Layout & Flexbox
